@@ -1,16 +1,22 @@
-# CSC 4035 Lab 4: JavaScript Interactivity
+# Lab 5 – UI Frameworks: Bootstrap, Tailwind & React
 
-## Group Members
-- Akende M Sikelete 2021464113
-- Adrian Phiri 2021397963
+##  Group Members
+- Akende M Sikelete - 2021464113
+- Adrian Phiri - 2021397963
 
-## Completed Features
-- ✅ Theme toggle (light/dark)
-- ✅ Contact form validation & feedback
-- ✅ Fetch API: Load user list
-- ✅ FAQ component with expand/collapse
-- ✅ Bonus: Real-time clock
+##  Project Structure
+- `/bootstrap-demo`: Uses Bootstrap 5 to create a two-column layout with a navbar and alert/button.
+- `/tailwind-demo`: Tailwind CSS responsive card layout with image, heading, and button.
+- `/react-demo`: Interactive React component with props, `useState`, and conditional rendering.
 
-## Pages
-- index.html: Home with toggle, users list, FAQ
-- contact.html: Enhanced contact form
+##  Tools Used
+- Bootstrap: Component-based styling with a responsive grid.
+- Tailwind CSS: Utility-first classes for responsive design.
+- React.js: Component-based framework with declarative rendering and hooks.
+
+##  Learning Outcome
+Learned the differences in styling approaches and how React handles dynamic UI efficiently.
+
+## React Live Link
+https://codesandbox.io/p/sandbox/react-new
+
