@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex; /* Apply flexbox to body */
+    flex-direction: column; /* Stack the content vertically */
+    min-height: 100vh; /* Ensure the body takes up full height */
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex; /* Apply flexbox to header */
+    justify-content: space-between; /* Space out items (logo, navigation) */
+    align-items: center; /* Vertically align items */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal navigation */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Section */
+main {
+    display: flex; /* Apply flexbox layout */
+    justify-content: space-between; /* Align sections horizontally */
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1; /* Allow main section to grow and fill remaining space */
+}
+
+/* Flex for Hero and Sidebar (side by side) */
+.hero {
+    flex: 1; /* Allow hero section to take up remaining space */
+    background-color: rgba(12, 11, 11, 0.08);
+    padding: 20px;
+}
+
+.sidebar {
+    width: 300px; /* Sidebar has fixed width */
+    background-color: #ddd;
+    padding: 20px;
+}
+
+/* Services Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Service Card Styling */
+.service-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Service Card Images */
+.service-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Hover Effects */
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Form Inputs */
+label {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #0f0f0f;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #646464;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Dark Theme */
+.dark-theme {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Answer Visibility */
+.answer {
+    display: none;
+}
+
+.answer.visible {
+    display: block;
+}
+
+/* FAQ Section */
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.question {
+    cursor: pointer;
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+.answer {
+    display: none;
+    margin-top: 10px;
+    color: #333;
+}
+
+.answer.visible {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #76efb4;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    flex-shrink: 0; /* Prevent footer from shrinking */
+}
